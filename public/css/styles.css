@@ -1,0 +1,60 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.bingo-cards__container {
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn__container {
+    align-self: center;
+}
+
+.bingo-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 404px;
+
+    margin: 30px;
+
+    border: solid 2px black;
+}
+
+.bingo-card__cell {
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+
+    width: 100px;
+    height: 80px;
+
+    padding: 5px;
+
+    text-align: center;
+    font-weight: bold;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.bingo-card__cell > span {
+    align-self: center;
+}
+
+
+/* No printing elements */
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
